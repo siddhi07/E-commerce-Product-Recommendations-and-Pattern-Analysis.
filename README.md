@@ -208,8 +208,9 @@ The dashboard will open in your browser at `http://localhost:8501`
 ## Sample Screenshots
 
 ### Dashboard Interface
+
+### Entity Relationship Diagram showing database structure
 ![Dashboard Preview](Entity_Relation_Diagram.png)  
-*Entity Relationship Diagram showing database structure*
 
 ---
 
