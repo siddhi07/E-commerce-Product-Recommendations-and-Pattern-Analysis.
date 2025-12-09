@@ -22,7 +22,7 @@ Part 1: Data Cleaning & Database Creation
 Part 2: Market Basket Analysis
     ↓ (produces product_apriori.db)
 Part 3: Sentiment Analysis
-    ↓ (produces product_apriori_senti.db)
+    ↓ (produces product_apriori_sentiment.db)
 Part 4: Interactive Dashboard
     ↓ (visualizes insights)
 ```
@@ -108,7 +108,7 @@ jupyter notebook Final_Part2_Market_Basket_Analysis.ipynb
 - Predicts sentiment scores for products
 - Creates `sentiment_predictions` table with results
 
-**Output:** `product_apriori_senti.db`
+**Output:** `product_apriori_sentiment.db`
 
 **To Run:**
 ```bash
@@ -122,7 +122,7 @@ jupyter notebook Final_Part3_Sentiment_Analysis.ipynb
 
 **File:** `app.py`
 
-**Input:** `product_apriori_senti.db`
+**Input:** `product_apriori_sentiment.db`
 
 **Process:**
 - Loads product recommendations and sentiment data
@@ -183,7 +183,7 @@ The dashboard will open in your browser at `http://localhost:8501`
 - `market_basket` - Association rules (antecedents, consequents, lift, confidence, support)
 - `top_products` - Top-ranked products by category
 
-**product_apriori_senti.db** adds:
+**product_apriori_sentiment.db** adds:
 - `sentiment_predictions` - Predicted sentiment scores for products
 
 ### Dashboard Features
@@ -237,7 +237,7 @@ scikit-learn==1.3+
 ├── app.py                                    # Streamlit dashboard
 ├── products.db                               # Database from Part 1
 ├── product_apriori.db                        # Database from Part 2
-├── product_apriori_senti.db                  # Final database from Part 3
+├── product_apriori_sentiment.db                  # Final database from Part 3
 ├── Entity_Relation_Diagram.png               # Database schema diagram
 ├── Project_Report.pdf                        # Detailed project report
 └── README.md                                 # This file
